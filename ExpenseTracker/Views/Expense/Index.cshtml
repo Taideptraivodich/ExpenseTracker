@@ -1,0 +1,28 @@
+﻿@model List<ExpenseTracker.Models.Expense>;
+
+
+<table>
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Title</th>
+			<th>Amount</th>
+			<th>Date</th>
+			<th>Category</th>
+		</tr>
+	</thead>
+
+	<tbody>
+
+		@foreach (var expense in Model)
+		{
+			<tr>
+				<td>@expense.Id</td>
+				<td>@expense.Title</td>
+				<td>@expense.Amount</td>
+				<td>@expense.Date</td>
+				<td>@expense.Category</td>
+			</tr>
+		}
+	</tbody>
+</table>

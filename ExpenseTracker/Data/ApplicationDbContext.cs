@@ -8,6 +8,6 @@ namespace ExpenseTracker.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) { }
 
-        public DbSet<Expense> Products { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
     }
 }
